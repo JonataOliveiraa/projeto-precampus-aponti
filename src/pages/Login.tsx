@@ -13,7 +13,7 @@ function Login() {
 
             <div className="bg-white rounded-full  flex flex-row items-center overflow-hidden">
               {
-                ['Student', 'School', 'University', 'PreCampus'].map((value, index) => (
+                ['Estudante', 'Escola', 'Universidade', 'PreCampus'].map((value, index) => (
                   <label className="cursor-pointer">
                     <input type="radio" name="user-type" value={index} className="hidden peer" defaultChecked={value === "Student"}></input>
                     <span className="inline-block p-2 text-zinc-500 peer-checked:bg-blue-700 peer-checked:text-white">{value}</span>
