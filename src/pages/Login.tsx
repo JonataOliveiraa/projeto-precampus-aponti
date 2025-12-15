@@ -18,8 +18,12 @@ function Login() {
               {
                 ['Estudante', 'Escola', 'Universidade', 'PreCampus'].map((value, index) => (
                   <label className="cursor-pointer">
-                    <input type="radio" name="user-type" value={index} className="hidden peer" defaultChecked={value === "Student"} onChange={() => {
-                      value === "Estudante" ? setPlaceholder("Email") : setPlaceholder("CNPJ")
+                    <input type="radio" name="user-type" value={index} className="hidden peer" defaultChecked={value === "Estudante"} onChange={() => {
+                      if (value === "Estudante") {
+                        setPlaceholder("Email");
+                      } else {
+                        setPlaceholder("CNPJ");
+                      }
                     }}></input>
                     <span className={`inline-block py-2 px-5 text-zinc-500 peer-checked:bg-blue-700 peer-checked:text-white ${["Estudante","Escola", "Universidade"].includes(value) ? "border-r" : ""}`}>{value}</span>
                   </label>
