@@ -30,7 +30,6 @@ function Login() {
                 ))
               }
             </div>
-
             <div className="w-fit flex flex-col justify-center items-center gap-3">
               <div className="flex flex-row gap-2 items-center bg-white px-1.5 rounded-full">
                 <RiUserLine size={30} className="text-zinc-500 border rounded-full p-0.5"></RiUserLine>
