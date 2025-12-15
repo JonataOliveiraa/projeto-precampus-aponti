@@ -1,9 +1,9 @@
-import FormLayout from "./layout/FormLayout"
+import StudentForm from "./modules/student/StudentForm"
 
 function App() {
   return (
-    <FormLayout>
-    </FormLayout>
+    <StudentForm>
+    </StudentForm>
   )
 }
 
