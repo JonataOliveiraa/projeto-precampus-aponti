@@ -1,9 +1,9 @@
-import Login from "./pages/Login"
+import FormLayout from "./layout/FormLayout"
 
 function App() {
   return (
-    <Login>
-    </Login>
+    <FormLayout>
+    </FormLayout>
   )
 }
 
