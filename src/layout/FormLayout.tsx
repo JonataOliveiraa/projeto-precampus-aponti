@@ -10,7 +10,7 @@ function FormLayout({ children }: { children?: React.ReactNode }) {
             <h1 className="text-3xl text-blue-600">Faça seu cadastro</h1>
             <p>Já tem uma conta? <span className="text-blue-700 border-b border-transparent cursor-pointer hover:border-blue-600">Faça login</span></p>
         </div>
-        {children}
+        { children }
       </div>
     </div>
   );
