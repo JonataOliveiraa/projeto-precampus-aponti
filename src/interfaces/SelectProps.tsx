@@ -1,3 +1,5 @@
+import type { Option } from "./OptionProps"
+
 export interface SelectProps {
   label?: string
   value: string
@@ -5,7 +7,3 @@ export interface SelectProps {
   options: Option[]
 }
 
-interface Option { 
-  label: string
-  value: string
-}
