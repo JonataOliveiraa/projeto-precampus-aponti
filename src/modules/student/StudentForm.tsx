@@ -1,5 +1,5 @@
 import FormLayout from "../../layout/FormLayout";
-
+import FormBarProgress from "../../layout/components/FormBarProgress";
 import FormDateInput from "../../layout/components/FormDateInput";
 import FormSubtitle from "../../layout/components/FormSubtitle";
 import FormInputMask from "../../layout/components/FormInputMask";
@@ -12,7 +12,7 @@ function StudentForm() {
     return (
         <FormLayout>
             <FormSubtitle text="DADOS DO ALUNO" />
-            <FormTextInput  label="NOME COMPLETO" placeholder="Nome do aluno" />
+            <FormTextInput label="NOME COMPLETO" placeholder="Nome do aluno" />
             <FormTextInput label="EMAIL" placeholder="user@hotmail.com" />
             <div className="my-5 flex gap-2">
                 <FormDateInput label="DATA DE NASCIMENTO" />
@@ -38,19 +38,23 @@ function StudentForm() {
                     ]
                 } />
             </div>
+
+            <div className="mt-50">
             <FormSubtitle text="DADOS DO RESPONSÁVEL" />
-                <FormTextInput  label="NOME COMPLETO" placeholder="Nome do responsável" />
+
+                <FormTextInput label="NOME COMPLETO" placeholder="Nome do responsável" />
                 <FormTextInput label="EMAIL" placeholder="user@hotmail.com" />
                 <div className="my-5 flex gap-2">
                     <FormTextInput label="GRAU DE PARENTESCO" placeholder="Ex: Mãe, Pai, Tio, Tia..." />
                     <FormInputMask label="CPF" mask="000.000.000-00" placeholder="123.456.789-10" />
-                    <FormNumberInput label="RENDA MENSAL"placeholder="R$ 2.000"/>
+                    <FormNumberInput label="RENDA MENSAL" placeholder="R$ 2.000" />
                 </div>
                 <div className="mb-10">
                     <FormTextInput label="SENHA" />
                     <FormTextInput label="CONFIRMAR SENHA" />
                 </div>
-                <Button text="Confirmar"/>
+            </div>
+            <Button text="Confirmar" />
         </FormLayout>
     )
 }
