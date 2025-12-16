@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Background from "../components/Background";
 import React from "react";
 
@@ -8,7 +9,7 @@ function FormLayout({ children }: { children?: React.ReactNode }) {
       <div className="flex-1 bg-white/35 rounded-2xl py-6 px-30 z-10">
         <div className="mb-8">
             <h1 className="text-3xl text-blue-600">Faça seu cadastro</h1>
-            <p>Já tem uma conta? <span className="text-blue-700 border-b border-transparent cursor-pointer hover:border-blue-600">Faça login</span></p>
+            <p>Já tem uma conta? <Link to={"/login"} className="text-blue-700 border-b border-transparent cursor-pointer hover:border-blue-600">Faça login</Link></p>
         </div>
         { children }
       </div>

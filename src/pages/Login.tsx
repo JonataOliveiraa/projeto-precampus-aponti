@@ -3,9 +3,12 @@ import Logo from "../assets/logo.png";
 import { RiUserLine, RiLockLine } from "@remixicon/react"
 import Button from "../components/Button";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Login() {
   const [placeholder, setPlaceholder] = useState("Email")
+  const [userType, setUserType] = useState("estudante");
+
   return (
     <div className="min-h-screen bg-[#1E90FF] relative overflow-hidden">
       <Background />
@@ -19,6 +22,8 @@ function Login() {
                 ['Estudante', 'Escola', 'Universidade', 'PreCampus'].map((value, index) => (
                   <label className="cursor-pointer">
                     <input type="radio" name="user-type" value={index} className="hidden peer" defaultChecked={value === "Estudante"} onChange={() => {
+                      setUserType(value);
+                      
                       if (value === "Estudante") {
                         setPlaceholder("Email");
                       } else {
@@ -42,7 +47,7 @@ function Login() {
               <Button text="Entrar"></Button>
             </div>
             <div className="flex flex-row w-full justify-between p-2 overflow-hidden">
-              <span className="text-blue-600 border-b border-transparent cursor-pointer hover:border-blue-600">Criar conta</span>
+              <Link to={`/formulario/${userType.toLowerCase()}`} className="text-blue-600 border-b border-transparent cursor-pointer hover:border-blue-600">Criar conta</Link>
               <span className="text-blue-600 border-b border-transparent cursor-pointer hover:border-blue-600">Esqueci a senha</span>
             </div>
           </div>
