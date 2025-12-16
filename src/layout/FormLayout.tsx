@@ -4,6 +4,8 @@ import React from "react";
 import FormTextInput from "./components/FormTextInput";
 import FormNumberInput from "./components/FormNumberInput";
 import FormInputMask from "./components/FormInputMask";
+import FormDateInput from "./components/FormDateInput";
+import FormSelect from "./components/FormSelect";
 
 function FormLayout({ children }: { children?: React.ReactNode }) {
   return (
@@ -18,6 +20,8 @@ function FormLayout({ children }: { children?: React.ReactNode }) {
         <FormTextInput label="asda" placeholder="asda"/>
         <FormNumberInput label="asda" placeholder="1231"/>
         <FormInputMask label="phone number" mask="(00) 0000-0000" placeholder="(99) 9999-9999"/>
+        <FormDateInput label="Birthdate" placeholder="Select your birthdate"/>
+        <FormSelect label="opçoes" options={[{value: 'a', label: 'a'}]} />
       </div>
     </div>
   );
