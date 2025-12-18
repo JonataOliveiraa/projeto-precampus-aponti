@@ -8,7 +8,7 @@ function FormNumberInput({ onChange, label, placeholder  }: InputProps) {
             <input
                 type="number"
                 placeholder={placeholder}
-                onChange={(e) => onChange(e.target.value)}
+                onChange={onChange}
                 className="border rounded px-3 py-2 bg-white/20"
             />
         </div>

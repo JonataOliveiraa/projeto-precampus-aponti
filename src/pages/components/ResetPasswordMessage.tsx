@@ -9,7 +9,7 @@ function ResetPasswordMessage({ Close }: { Close: (e: React.MouseEvent<HTMLDivEl
           className="fixed   top-90 right-197 cursor-pointer"
           onClick={Close}
         >
-          <span className="text-orange-700 text-3xl font-bold">X </span>
+          <span className="text-orange-700 text-3xl font-bold">X</span>
         </div>
         <h1 className="text-xl text-justify font-semibold">
           Para redefinir sua senha, clique no link que foi enviado para seu
