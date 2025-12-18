@@ -4,6 +4,7 @@ import { RiUserLine, RiLockLine } from "@remixicon/react"
 import Button from "../components/Button";
 import { useState } from "react";
 import ResetPasswordMessage from "./components/ResetPasswordMessage";
+import { Link } from "react-router-dom";
 
 function ResetPassword() {
   const [showMessage, setShowMessage] = useState(false)
@@ -53,6 +54,7 @@ function ResetPassword() {
               </div>
               <Button text="Enviar" onClick={showAlertMessage}></Button>
             </div>
+            <Link to={`/login`} className="text-blue-600 border-b border-transparent cursor-pointer hover:border-blue-600 mt-5">Voltar</Link>
           </div>
       </div>
     </div>
