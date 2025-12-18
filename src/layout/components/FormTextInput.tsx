@@ -1,6 +1,6 @@
 import type { InputProps } from "../../interfaces/InputProps";
 
-function FormTextInput({ onChange, label, placeholder  }: InputProps) {
+function FormTextInput({  label, placeholder  }: InputProps) {
     return (
         <div className="flex flex-col gap-1">
             {label && <label className="text-sm">{label}</label>}
@@ -8,7 +8,6 @@ function FormTextInput({ onChange, label, placeholder  }: InputProps) {
             <input
                 type="text"
                 placeholder={placeholder}
-                onChange={(e) => onChange(e.target.value)}
                 className="border rounded px-3 py-2 bg-white/30"
             />
         </div>
