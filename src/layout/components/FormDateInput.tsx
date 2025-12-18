@@ -8,7 +8,7 @@ function FormDateInput({ onChange, label  }: InputProps) {
             <input
                 type="date"
                 onChange={(e) => onChange(e.target.value)}
-                className="border rounded px-3 py-2"
+                className="border rounded px-3 py-2 bg-white/20"
             />
         </div>
     );

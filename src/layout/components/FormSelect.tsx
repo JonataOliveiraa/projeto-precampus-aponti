@@ -7,7 +7,7 @@ function FormSelect({ onChange, label, options }: SelectProps) {
 
             <select
                 onChange={(e) => onChange(e.target.value)}
-                className="border px-3 py-2 rounded"
+                className="border px-3 py-2 rounded bg-white/20"
             >
                 <option value="">Selecione</option>
 

@@ -9,7 +9,7 @@ function FormTextInput({ onChange, label, placeholder  }: InputProps) {
                 type="text"
                 placeholder={placeholder}
                 onChange={(e) => onChange(e.target.value)}
-                className="border rounded px-3 py-2"
+                className="border rounded px-3 py-2 bg-white/30"
             />
         </div>
     );
