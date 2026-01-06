@@ -7,6 +7,7 @@ import FormNumberInput from "../../layout/components/FormNumberInput";
 import FormTextInput from "../../layout/components/FormTextInput";
 import FormSelect from "../../layout/components/FormSelect";
 import Button from "../../components/Button";
+import FormMultiSelect from "../../layout/components/FormMultiSelect";
 
 function StudentForm() {
     return (
@@ -19,15 +20,7 @@ function StudentForm() {
                 <FormInputMask label="TELEFONE" mask="(00) 0000-0000" placeholder="(99) 9999-9999" />
             </div>
             <div className="my-5 flex flex-col gap-2">
-                <FormSelect label="UNIVERSIDADE DE INTERESSE" options={
-                    [
-                        { label: "Universidade Federal de São Paulo", value: "ufsp" },
-                        { label: "Universidade Estadual do Rio de Janeiro", value: "uerj" },
-                        { label: "Universidade Católica de Minas Gerais", value: "ucmg" },
-                        { label: "Universidade Privada de Brasília", value: "upb" },
-                        { label: "Universidade Federal do Nordeste", value: "ufn" }
-                    ]
-                } />
+                <FormMultiSelect label="UNIVERSIDADE DE INTERESSE" />
                 <FormSelect label="CURSO DE INTERESSE" options={
                     [
                         { label: "Engenharia de Software", value: "eng_software" },
