@@ -9,6 +9,7 @@ import StudentForm from './modules/student/StudentForm.tsx';
 import SchoolForm from './modules/school/SchoolForm.tsx';
 import UniversityForm from './modules/university/UniversityForm.tsx';
 import ResetPassword from './pages/ResetPassword.tsx';
+import StudentHome from './modules/student/StudentHome.tsx';
 
 const rounter = createBrowserRouter([
   {
@@ -42,7 +43,12 @@ const rounter = createBrowserRouter([
   {
     path: '/recuperar-senha',
     element: <ResetPassword/>
+  },
+  {
+    path: '/home-estudante',
+    element: <StudentHome/>
   }
+  
 ])
 
 createRoot(document.getElementById('root')!).render(
