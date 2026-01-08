@@ -44,8 +44,10 @@ function Login() {
                 <RiLockLine size={30} className="text-zinc-500 border rounded-full p-0.5"></RiLockLine>
                 <input type="text" placeholder="Senha" className="bg-white p-2 rounded-full outline-0"/>
               </div>
-              <Button text="Entrar"></Button>
-            </div>
+              <Link to={`/${userType}/home`} className="w-full">
+                <Button text="Entrar"></Button>
+              </Link>
+            </div>  
             <div className="flex flex-row w-full justify-between p-2 overflow-hidden">
               <Link to={`/formulario/${userType.toLowerCase()}`} className="text-blue-600 border-b border-transparent cursor-pointer hover:border-blue-600">Criar conta</Link>
               <Link to={`/recuperar-senha`} className="text-blue-600 border-b border-transparent cursor-pointer hover:border-blue-600">Esqueci a senha</Link>
