@@ -30,19 +30,19 @@ const Card = ({
 
       {/* Botão */}
       {status === "inscrever" && (
-        <button className="mt-auto bg-green-500 text-white py-2 rounded-lg hover:opacity-90">
+        <button className="mt-auto bg-green-500 text-white font-semibold py-2 rounded-full hover:opacity-90">
           Inscreva-se
         </button>
       )}
 
       {status === "inscrito" && (
-        <button className="mt-auto border border-secondary text-secondary py-2 rounded-lg cursor-default">
+        <button className="border-2 border-blue-600 text-orange-500 font-semibold px-6 py-2 rounded-full cursor-default">
           Inscrito
         </button>
       )}
 
       {status === "saibaMais" && (
-        <button className="mt-auto border border-primary text-primary py-2 rounded-lg hover:bg-primary hover:text-white transition">
+        <button className="border-2 border-blue-600 text-orange-500 font-semibold px-6 py-2 rounded-full cursor-default">
           Saiba mais
         </button>
       )}
