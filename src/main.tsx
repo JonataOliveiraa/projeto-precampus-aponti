@@ -9,6 +9,10 @@ import StudentForm from './modules/student/StudentForm.tsx';
 import SchoolForm from './modules/school/SchoolForm.tsx';
 import UniversityForm from './modules/university/UniversityForm.tsx';
 import ResetPassword from './pages/ResetPassword.tsx';
+import StudentHome from "./modules/student/StudentHome";
+import Events from "./modules/student/pages/Events.tsx";
+import EventDetails from "./modules/student/pages/EventDetails.tsx";
+import StudentProfile from "./modules/student/StudentProfile.tsx"
 
 const rounter = createBrowserRouter([
   {
@@ -42,9 +46,25 @@ const rounter = createBrowserRouter([
   {
     path: '/recuperar-senha',
     element: <ResetPassword/>
+  },
+  {
+    path: '/inicio-estudante',
+    element: <StudentHome />
+  },
+  {
+    path: '/eventos',
+    element: <Events/>
+  },
+  {
+    path: '/detalhes-eventos',
+    element: <EventDetails/>
+  },
+  {
+    path: '/perfil-estudante',
+    element: <StudentProfile/>
   }
 ])
-
+ 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
    <RouterProvider router={rounter}></RouterProvider>
