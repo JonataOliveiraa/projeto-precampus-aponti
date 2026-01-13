@@ -5,7 +5,6 @@ import FormSubtitle from "../../layout/components/FormSubtitle";
 import FormInputMask from "../../layout/components/FormInputMask";
 import FormNumberInput from "../../layout/components/FormNumberInput";
 import FormTextInput from "../../layout/components/FormTextInput";
-import FormSelect from "../../layout/components/FormSelect";
 import Button from "../../components/Button";
 import FormMultiSelect from "../../layout/components/FormMultiSelect";
 

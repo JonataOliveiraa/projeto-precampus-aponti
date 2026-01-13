@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 interface option {
     label: string,
@@ -52,7 +52,7 @@ function FormMultiSelect({ label, options, className }: { label: string, options
                                                 : 'bg-white text-black hover:bg-blue-100'
                                         }`}
                                     >
-                                        {element.value.toUpperCase()}: {element.label}
+                                        {element.label}
                                     </div>
                                 )
                             })}
