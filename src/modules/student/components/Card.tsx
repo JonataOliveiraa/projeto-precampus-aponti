@@ -1,59 +1,35 @@
-import { RiCheckLine } from "@remixicon/react";
-
-interface CardProps {
-  titulo: string;
-  data?: string;
-  status?: "inscrever" | "inscrito" | "saibaMais";
-  imagem?: string;
+interface NextEventProps {
+  title: string;
+  img: string;
 }
 
-export default function Card({
-  titulo,
-  data = "00/00/0000",
-  status = "inscrever",
-  imagem = "/img/evento.jpg",
-}: CardProps) {
+export default function NextEventBanner({ title, img }: NextEventProps) {
   return (
-    <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-all p-4 flex flex-col h-full border border-gray-100">
-      
-      <div className="relative h-40 mb-4 overflow-hidden rounded-xl">
-        <img
-          src={imagem}
-          alt={titulo}
-          className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
-        />
-      </div>
-
-      <div className="flex-1 flex flex-col">
-        <h3 className="text-lg font-bold text-blue-900 leading-tight mb-2 line-clamp-2">
-          {titulo}
+    <section className="bg-white rounded-2xl border-2 border-orange-500 shadow-md p-6 mb-8 flex flex-col md:flex-row items-center gap-6 hover:shadow-lg transition-shadow duration-300">
+      <div className="flex-1">
+        <h3 className="text-xl font-bold text-orange-500 mb-2 uppercase tracking-wide">
+          Próximo Evento:
         </h3>
 
-        <p className="text-sm text-gray-500 mb-6 font-medium">
-          {data}
+        <p className="text-blue-600 text-2xl font-bold mb-6 leading-tight">
+          {title}
         </p>
 
-        <div className="mt-auto">
-          {status === "inscrever" && (
-            <button className="w-full bg-green-500 text-white font-bold py-2.5 rounded-full hover:bg-green-600 transition-colors shadow-sm active:scale-95">
-              Inscreva-se
-            </button>
-          )}
-
-          {status === "inscrito" && (
-            <button disabled className="w-full bg-blue-50 text-blue-400 font-bold py-2.5 rounded-full cursor-not-allowed flex items-center justify-center gap-2">
-              <RiCheckLine size={20} />
-              Inscrito
-            </button>
-          )}
-
-          {status === "saibaMais" && (
-            <button className="w-full border-2 border-orange-500 text-blue-600 font-bold py-2.5 rounded-full hover:bg-orange-50 transition-colors">
-              Saiba mais
-            </button>
-          )}
+        <div className="flex gap-4">
+          <button className="bg-green-500 text-white font-bold px-8 py-2.5 rounded-full hover:bg-green-600 transition-all shadow-md hover:shadow-lg active:scale-95 cursor-pointer transform">
+            Inscreva-se
+          </button>
+          <button className="border-2 border-orange-500 text-orange-500 font-bold px-8 py-2.5 rounded-full hover:bg-orange-500 hover:text-white transition-all active:scale-95 cursor-pointer">
+            Saiba mais
+          </button>
         </div>
       </div>
-    </div>
+
+      <img
+        src={img}
+        alt="Destaque do evento"
+        className="w-full md:w-72 h-48 rounded-xl object-cover shadow-sm hover:scale-[1.02] transition-transform duration-300"
+      />
+    </section>
   );
 }
