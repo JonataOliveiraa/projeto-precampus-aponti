@@ -19,7 +19,7 @@ export default function StudentSidebar() {
       <nav className="flex-1 space-y-2 pr-4 overflow-y-auto custom-scrollbar">
         
         <SidebarLink 
-          to="/aluno/home" 
+          to="/estudante/home" 
           icon={<RiHomeLine size={24} />}
           activeBg="bg-orange-500"
           textColor="text-orange-500"
@@ -28,7 +28,7 @@ export default function StudentSidebar() {
         </SidebarLink>
 
         <SidebarLink 
-          to="/aluno/meus-eventos" 
+          to="/estudante/meus-eventos" 
           icon={<RiCalendarEventLine size={24} />}
           activeBg="bg-orange-500"
           textColor="text-orange-500"
@@ -37,7 +37,7 @@ export default function StudentSidebar() {
         </SidebarLink>
 
         <SidebarLink 
-          to="/aluno/certificados" 
+          to="/estudante/certificados" 
           icon={<RiFileListLine size={24} />}
           activeBg="bg-orange-500"
           textColor="text-orange-500"
@@ -46,7 +46,7 @@ export default function StudentSidebar() {
         </SidebarLink>
 
         <SidebarLink 
-          to="/aluno/perfil" 
+          to="/estudante/perfil" 
           icon={<RiUserLine size={24} />}
           activeBg="bg-orange-500"
           textColor="text-orange-500"
