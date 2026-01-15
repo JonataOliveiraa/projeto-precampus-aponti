@@ -14,6 +14,7 @@ import SchoolHome from './modules/school/SchoolHome.tsx';
 import Events from './modules/student/pages/Events.tsx';
 import StudentProfile from './modules/student/pages/StudentProfile.tsx';
 import AdminHome from './modules/admin/AdminHome.tsx';
+import AddNewEvent from './modules/school/pages/AddNewEvent.tsx';
 
 const rounter = createBrowserRouter([
   {
@@ -61,9 +62,13 @@ const rounter = createBrowserRouter([
     element: <StudentProfile />
   },
   {
-    path: '/home/escola',
+    path: '/escola/home',
     element: <SchoolHome />
   },
+  {
+    path: '/escola/criar-evento',
+    element: <AddNewEvent />
+  },  
   //-
   {
     path: '/precampus/home',
