@@ -42,10 +42,13 @@ export default function StudentSidebar() {
           activeBg="bg-orange-500"
           textColor="text-orange-500"
         >
-          Certificados
+          Detalhes dos Eventos
         </SidebarLink>
 
-        <SidebarLink 
+        
+
+      </nav>
+      <SidebarLink 
           to="/estudante/perfil" 
           icon={<RiUserLine size={24} />}
           activeBg="bg-orange-500"
@@ -53,8 +56,6 @@ export default function StudentSidebar() {
         >
           Meu Perfil
         </SidebarLink>
-
-      </nav>
 
       <div className="pb-8 pr-4">
         <SidebarLink 
