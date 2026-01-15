@@ -13,6 +13,7 @@ import StudentHome from "./modules/student/StudentHome";
 import SchoolHome from './modules/school/SchoolHome.tsx';
 import Events from './modules/student/pages/Events.tsx';
 import StudentProfile from './modules/student/pages/StudentProfile.tsx';
+import AdminHome from './modules/admin/AdminHome.tsx';
 
 const rounter = createBrowserRouter([
   {
@@ -64,6 +65,10 @@ const rounter = createBrowserRouter([
     element: <SchoolHome />
   },
   //-
+  {
+    path: '/precampus/home',
+    element: <AdminHome />
+  }
 ])
  
 createRoot(document.getElementById('root')!).render(
