@@ -14,6 +14,7 @@ import SchoolHome from './modules/school/SchoolHome.tsx';
 import Events from './modules/student/pages/Events.tsx';
 import StudentProfile from './modules/student/pages/StudentProfile.tsx';
 import AdminHome from './modules/admin/AdminHome.tsx';
+import EventValidationAdmin from './modules/admin/pages/EventValidationAdmin.tsx';
 
 const rounter = createBrowserRouter([
   {
@@ -68,6 +69,10 @@ const rounter = createBrowserRouter([
   {
     path: '/precampus/home',
     element: <AdminHome />
+  },
+  {
+    path:'/precampus/validacao-eventos',
+    element: <EventValidationAdmin />
   }
 ])
  
