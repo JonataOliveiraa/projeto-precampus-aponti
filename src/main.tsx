@@ -14,6 +14,8 @@ import SchoolHome from './modules/school/SchoolHome.tsx';
 import Events from './modules/student/pages/Events.tsx';
 import StudentProfile from './modules/student/pages/StudentProfile.tsx';
 import AdminHome from './modules/admin/AdminHome.tsx';
+import ReqStudentsLogin from './modules/admin/pages/ReqStudentsLogin.tsx';
+import ReqUniversitiesLogin from './modules/admin/pages/ReqUniversitiesLogin.tsx';
 
 const rounter = createBrowserRouter([
   {
@@ -68,6 +70,14 @@ const rounter = createBrowserRouter([
   {
     path: '/precampus/home',
     element: <AdminHome />
+  },
+  {
+    path: "/precampus/validar-cadastros" ,
+    element: <ReqStudentsLogin />
+  },
+  {
+    path: "/precampus/validar-universidades",
+    element: <ReqUniversitiesLogin />
   }
 ])
  

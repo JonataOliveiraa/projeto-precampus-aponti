@@ -32,7 +32,7 @@ export default function AdminSidebar() {
         </SidebarLink>
 
         <SidebarLink 
-          to="/admin/validar-eventos" 
+          to="/precampus/validar-eventos" 
           icon={<RiCalendarCheckLine size={24} />}
           activeBg="bg-red-600"
           textColor="text-red-700"
@@ -41,7 +41,7 @@ export default function AdminSidebar() {
         </SidebarLink>
 
         <SidebarLink 
-          to="/admin/atribuir-universidades" 
+          to="/precampus/atribuir-universidades" 
           icon={<RiListCheck2 size={24} />}
           activeBg="bg-red-600"
           textColor="text-red-700"
@@ -50,7 +50,7 @@ export default function AdminSidebar() {
         </SidebarLink>
 
         <SidebarLink 
-          to="/admin/validar-universidades" 
+          to="/precampus/validar-universidades" 
           icon={<RiShieldCheckLine size={24} />}
           activeBg="bg-red-600"
           textColor="text-red-700"
@@ -59,7 +59,7 @@ export default function AdminSidebar() {
         </SidebarLink>
 
         <SidebarLink 
-          to="/admin/validar-cadastros" 
+          to="/precampus/validar-cadastros" 
           icon={<RiUserFollowLine size={24} />}
           activeBg="bg-red-600"
           textColor="text-red-700"
