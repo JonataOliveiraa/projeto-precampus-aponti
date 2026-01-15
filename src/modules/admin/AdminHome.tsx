@@ -21,7 +21,7 @@ export default function AdminHome() {
   return (
     <HomeLayout sidebar={<AdminSidebar />}>
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 gap-4">
-        <h1 className="text-3xl font-bold text-red-900">
+        <h1 className="text-3xl font-bold text-red-600">
           Bem-vindo, Admin!
         </h1>
 
@@ -31,7 +31,7 @@ export default function AdminHome() {
             placeholder="SELECIONE A ESCOLA OU UNIVERSIDADE"
             className="w-full pl-4 pr-12 py-3 border border-red-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-red-500 bg-white uppercase placeholder-gray-400 text-gray-600 transition-all"
           />
-          <div className="absolute right-3 top-1/2 -translate-y-1/2 text-red-600 cursor-pointer hover:text-red-800 transition-colors">
+          <div className="absolute right-3 top-1/2 -translate-y-1/2 text-red-600 cursor-pointer hover:text-red-600 transition-colors">
             <RiEqualizerLine size={24} />
           </div>
         </div>

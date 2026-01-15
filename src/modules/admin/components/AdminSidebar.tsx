@@ -11,7 +11,7 @@ import SidebarLink from "../../../layout/components/SidebarLink";
 
 export default function AdminSidebar() {
   return (
-    <aside className="w-72 bg-white h-screen flex flex-col border-r border-gray-200 shadow-xl fixed left-0 top-0 z-50 font-sans select-none">
+    <aside className="w-72 bg-white h-screen flex flex-col border-r border-red-200 shadow-xl fixed left-0 top-0 z-50 font-sans select-none">
       <div className="p-8 flex justify-center mb-4 hover:scale-105 transition-transform duration-300 cursor-pointer">
         <img 
           src={Logo} 
@@ -25,8 +25,8 @@ export default function AdminSidebar() {
         <SidebarLink 
           to="/precampus/home" 
           icon={<RiHomeLine size={24} />}
-          activeBg="bg-blue-600"
-          textColor="text-gray-700"
+          activeBg="bg-red-600"
+          textColor="text-red-700"
         >
           Página Inicial  
         </SidebarLink>
@@ -34,8 +34,8 @@ export default function AdminSidebar() {
         <SidebarLink 
           to="/admin/validar-eventos" 
           icon={<RiCalendarCheckLine size={24} />}
-          activeBg="bg-blue-600"
-          textColor="text-gray-700"
+          activeBg="bg-red-600"
+          textColor="text-red-700"
         >
           Validação de Eventos
         </SidebarLink>
@@ -43,8 +43,8 @@ export default function AdminSidebar() {
         <SidebarLink 
           to="/admin/atribuir-universidades" 
           icon={<RiListCheck2 size={24} />}
-          activeBg="bg-blue-600"
-          textColor="text-gray-700"
+          activeBg="bg-red-600"
+          textColor="text-red-700"
         >
           Atribuição de Universidades
         </SidebarLink>
@@ -52,8 +52,8 @@ export default function AdminSidebar() {
         <SidebarLink 
           to="/admin/validar-universidades" 
           icon={<RiShieldCheckLine size={24} />}
-          activeBg="bg-blue-600"
-          textColor="text-gray-700"
+          activeBg="bg-red-600"
+          textColor="text-red-700"
         >
           Validação de Universidades
         </SidebarLink>
@@ -61,8 +61,8 @@ export default function AdminSidebar() {
         <SidebarLink 
           to="/admin/validar-cadastros" 
           icon={<RiUserFollowLine size={24} />}
-          activeBg="bg-blue-600"
-          textColor="text-gray-700"
+          activeBg="bg-red-600"
+          textColor="text-red-700"
         >
           Validação de Cadastros
         </SidebarLink>

@@ -23,7 +23,7 @@ export default function SidebarLink({
         `flex items-center gap-3 px-6 py-4 font-bold uppercase text-sm transition-all duration-200 ${
           isActive 
             ? `${activeBg} text-white rounded-r-full shadow-md` 
-            : `${textColor} hover:bg-gray-50 hover:opacity-80`
+            : `${textColor} hover:bg-gray-100 rounded-r-full`
         }`
       }
     >
