@@ -15,6 +15,8 @@ import Events from './modules/student/pages/Events.tsx';
 import StudentProfile from './modules/student/pages/StudentProfile.tsx';
 import AdminHome from './modules/admin/AdminHome.tsx';
 import AddNewEvent from './modules/school/pages/AddNewEvent.tsx';
+import ReqStudentsLogin from './modules/admin/pages/ReqStudentsLogin.tsx';
+import ReqUniversitiesLogin from './modules/admin/pages/ReqUniversitiesLogin.tsx';
 
 
 const rounter = createBrowserRouter([
