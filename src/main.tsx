@@ -18,6 +18,8 @@ import AddNewEvent from './modules/school/pages/AddNewEvent.tsx';
 import ReqStudentsLogin from './modules/admin/pages/ReqStudentsLogin.tsx';
 import ReqUniversitiesLogin from './modules/admin/pages/ReqUniversitiesLogin.tsx';
 import PerformanceEvents from './modules/university/pages/PerformanceEvents.tsx';
+import PlofileUniversity from './modules/university/pages/ProfileUniversity.tsx';
+import ProfileUniversity from './modules/university/pages/ProfileUniversity.tsx';
 
 
 const rounter = createBrowserRouter([
@@ -89,6 +91,10 @@ const rounter = createBrowserRouter([
   {
     path: "/universidade/atuacao-eventos",
     element: <PerformanceEvents />
+  },
+  {
+    path: "/universidade/perfil",
+    element: <ProfileUniversity />
   }
 ])
  

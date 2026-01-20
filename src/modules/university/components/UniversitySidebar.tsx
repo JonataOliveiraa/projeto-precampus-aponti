@@ -25,7 +25,7 @@ export default function UniversitySidebar() {
         <SidebarLink 
           to="/universidade/home" 
           icon={<RiHomeLine size={24} />}
-          textColor="text-blue-900"
+          textColor="text-purple-600"
           activeBg="bg-purple-500"
         >
           Página Inicial
@@ -34,7 +34,7 @@ export default function UniversitySidebar() {
         <SidebarLink 
           to="/universidade/atuacao-eventos" 
           icon={<RiCalendarEventLine size={24} />}
-          textColor="text-blue-900"
+          textColor="text-purple-600"
           activeBg="bg-purple-500"
         >
           Atuação nos eventos
@@ -43,7 +43,7 @@ export default function UniversitySidebar() {
         <SidebarLink 
           to="/universidade/detalhes" 
           icon={<RiFileList3Line size={24} />}
-          textColor="text-blue-900"
+          textColor="text-purple-600"
           activeBg="bg-purple-500"
         >
           Detalhes dos Eventos
