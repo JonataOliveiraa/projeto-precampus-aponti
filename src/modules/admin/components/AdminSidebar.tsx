@@ -41,7 +41,7 @@ export default function AdminSidebar() {
         </SidebarLink>
 
         <SidebarLink 
-          to="/precampus/atribuir-universidades" 
+          to="/precampus/escolas" 
           icon={<RiListCheck2 size={24} />}
           activeBg="bg-red-600"
           textColor="text-red-700"
