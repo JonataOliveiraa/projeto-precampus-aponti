@@ -37,7 +37,7 @@ export default function StudentSidebar() {
         </SidebarLink>
 
         <SidebarLink 
-          to="/estudante/certificados" 
+          to="/estudante/detalhe-dos-eventos" 
           icon={<RiFileListLine size={24} />}
           activeBg="bg-orange-500"
           textColor="text-orange-500"

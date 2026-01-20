@@ -17,6 +17,7 @@ import AdminHome from './modules/admin/AdminHome.tsx';
 import AddNewEvent from './modules/school/pages/AddNewEvent.tsx';
 import ReqStudentsLogin from './modules/admin/pages/ReqStudentsLogin.tsx';
 import ReqUniversitiesLogin from './modules/admin/pages/ReqUniversitiesLogin.tsx';
+import EventDetails from './modules/student/pages/EventDetails.tsx';
 
 
 const rounter = createBrowserRouter([
@@ -84,6 +85,10 @@ const rounter = createBrowserRouter([
   {
     path: "/precampus/validar-universidades",
     element: <ReqUniversitiesLogin />
+  },
+  {
+    path: "/estudante/detalhe-dos-eventos",
+    element: <EventDetails />
   }
 ])
  
