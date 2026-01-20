@@ -10,7 +10,7 @@ export default function Events() {
         <h2 className="text-3xl font-bold text-orange-500">
           Eventos Disponíveis
         </h2>
-        <p className="text-gray-500 mt-1">Inscreva-se nas palestras e workshops.</p>
+        <p className="text-gray-500  mt-1">Inscreva-se nas palestras e workshops.</p>
       </div>
 
       <div className="bg-white rounded-2xl border-2 border-orange-500 shadow-md p-6">

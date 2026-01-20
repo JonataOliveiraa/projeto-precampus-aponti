@@ -15,7 +15,7 @@ function Home() {
           {/* Botão para voltar ao login */}
           <Link to={"/login"}>
             <button 
-                className="bg-blue-600 text-white px-6 py-2 rounded-full mt-14 hover:bg-blue-700 w-full cursor-pointer"
+                className="bg-blue-600 font-heading font-bold text-white px-6 py-2 rounded-full mt-14 hover:bg-blue-700 w-full cursor-pointer"
             >
                 Entrar
             </button>
