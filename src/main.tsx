@@ -18,6 +18,7 @@ import AddNewEvent from './modules/school/pages/AddNewEvent.tsx';
 import ReqStudentsLogin from './modules/admin/pages/ReqStudentsLogin.tsx';
 import ReqUniversitiesLogin from './modules/admin/pages/ReqUniversitiesLogin.tsx';
 import SchoolsAdmin from './modules/admin/pages/Schools.tsx';
+import PerformanceEvents from './modules/university/pages/PerformanceEvents.tsx';
 
 
 const rounter = createBrowserRouter([
@@ -89,6 +90,10 @@ const rounter = createBrowserRouter([
   {
     path: "/precampus/escolas",
     element: <SchoolsAdmin />
+  },
+  {
+    path: "/universidade/atuacao-eventos",
+    element: <PerformanceEvents />
   }
 ])
  
