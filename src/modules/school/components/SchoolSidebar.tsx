@@ -40,7 +40,7 @@ export default function SchoolSidebar() {
         </SidebarLink>
 
         <SidebarLink 
-          to="/escola/detalhes" 
+          to="/escola/eventos-detalhes" 
           icon={<RiFileList3Line size={24} />}
           textColor="text-blue-900"
           activeBg="bg-green-500"

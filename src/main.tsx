@@ -19,8 +19,9 @@ import ReqStudentsLogin from './modules/admin/pages/ReqStudentsLogin.tsx';
 import ReqUniversitiesLogin from './modules/admin/pages/ReqUniversitiesLogin.tsx';
 import SchoolsAdmin from './modules/admin/pages/Schools.tsx';
 import PerformanceEvents from './modules/university/pages/PerformanceEvents.tsx';
-import EventDetails from './modules/student/pages/EventDetails.tsx';
+import EventDetails from './modules/student/pages/EventDetailsStudent.tsx';
 import ProfileUniversity from './modules/university/pages/ProfileUniversity.tsx';
+import EventDetailsSchool from './modules/school/pages/EventDetailsSchool.tsx';
 
 
 const rounter = createBrowserRouter([
@@ -75,7 +76,11 @@ const rounter = createBrowserRouter([
   {
     path: '/escola/criar-evento',
     element: <AddNewEvent />
-  },  
+  },
+  {
+    path: '/escola/eventos-detalhes',
+    element: <EventDetailsSchool />
+  },
   //-
   {
     path: '/precampus/home',

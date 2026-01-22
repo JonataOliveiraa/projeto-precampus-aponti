@@ -1,21 +1,20 @@
 import HomeLayout from "../../../layout/HomeLayout";
-import StudentSidebar from "../components/StudentSidebar";
+import SchoolSidebar from "../components/SchoolSidebar";
 import Img from "../../.././assets/ppl.png";
 
-export default function EventDetails() {
+export default function EventDetailsSchool() {
   return (
-    <HomeLayout sidebar={<StudentSidebar />}>
+    <HomeLayout sidebar={<SchoolSidebar />}>
       <div className="mb-6">
-        <h2 className="text-3xl font-bold text-orange-500">
+        <h2 className="text-3xl font-bold text-green-600">
           Detalhes e eventos
         </h2>
       </div>
 
-      <div className="bg-white rounded-2xl border-2 border-orange-500 shadow-md p-6 grid grid-cols-2">
+      <div className="bg-white rounded-2xl border-2 border-green-600 shadow-md p-6 grid grid-cols-2">
         <div className="p-2">
           <h1 className="text-blue-600"> NOME DO EVENTO </h1>
           <p>
-            {" "}
             <span className="text-blue-600">Data:</span> 00/00/0000
           </p>
           <p>
