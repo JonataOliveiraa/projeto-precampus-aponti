@@ -20,6 +20,7 @@ import ReqUniversitiesLogin from './modules/admin/pages/ReqUniversitiesLogin.tsx
 import SchoolsAdmin from './modules/admin/pages/Schools.tsx';
 import PerformanceEvents from './modules/university/pages/PerformanceEvents.tsx';
 import EventDetails from './modules/student/pages/EventDetails.tsx';
+import ProfileUniversity from './modules/university/pages/ProfileUniversity.tsx';
 
 
 const rounter = createBrowserRouter([
@@ -99,6 +100,10 @@ const rounter = createBrowserRouter([
   {
     path: "/estudante/detalhe-dos-eventos",
     element: <EventDetails />
+  },
+  {
+    path: "/universidade/perfil",
+    element: <ProfileUniversity />
   }
 ])
  
