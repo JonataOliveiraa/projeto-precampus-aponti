@@ -4,7 +4,7 @@ import React from "react";
 
 function FormLayout({ children }: { children?: React.ReactNode }) {
   return (
-    <div className="min-h-screen p-2 bg-[#1E90FF] relative overflow-hidden flex">
+    <div className="min-h-screen font-sans p-2 bg-[#1E90FF] relative overflow-hidden flex">
       <Background />
       <div className="flex-1 bg-white/35 rounded-2xl py-6 px-30 z-10">
         <div className="mb-8">
