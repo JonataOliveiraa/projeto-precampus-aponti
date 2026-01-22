@@ -15,6 +15,7 @@ import Events from './modules/student/pages/Events.tsx';
 import StudentProfile from './modules/student/pages/StudentProfile.tsx';
 import AdminHome from './modules/admin/AdminHome.tsx';
 import EventValidationAdmin from './modules/admin/pages/EventValidationAdmin.tsx';
+import HomeEscola from './modules/school/pages/HomeEscola.tsx';
 
 const rounter = createBrowserRouter([
   {
@@ -65,7 +66,8 @@ const rounter = createBrowserRouter([
     path: '/home/escola',
     element: <SchoolHome />
   },
-  //-
+
+
   {
     path: '/precampus/home',
     element: <AdminHome />
@@ -73,11 +75,16 @@ const rounter = createBrowserRouter([
   {
     path:'/precampus/validacao-eventos',
     element: <EventValidationAdmin />
+  },
+
+  {
+    path: '/escola/home',
+    element: <HomeEscola />
   }
 ])
- 
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-   <RouterProvider router={rounter}></RouterProvider>
-  </StrictMode>,
+    <RouterProvider router={rounter} />
+  </StrictMode>
 )
