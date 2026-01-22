@@ -2,7 +2,8 @@ import {
   RiHomeLine, 
   RiCalendarEventLine, 
   RiFileList3Line, 
-  RiLogoutBoxLine 
+  RiLogoutBoxLine,
+  RiUserLine 
 } from "@remixicon/react";
 import SidebarLink from "../../../layout/components/SidebarLink"; 
 import Logo from "../../../assets/logo.png"; 
@@ -11,6 +12,7 @@ export default function SchoolSidebar() {
   return (
     <aside className="w-72 bg-white h-screen flex flex-col border-r border-gray-200 shadow-xl fixed left-0 top-0 z-50 font-sans select-none">
       
+      {/* --- LOGO --- */}
       <div className="p-8 flex justify-center mb-4 cursor-pointer hover:scale-105 transition-transform duration-300">
         <img 
           src={Logo} 
@@ -19,6 +21,7 @@ export default function SchoolSidebar() {
         />
       </div>
 
+      {/* --- MENU SUPERIOR (Links Principais) --- */}
       <nav className="flex-1 space-y-2 pr-4 overflow-y-auto custom-scrollbar">
         
         <SidebarLink 
@@ -50,7 +53,20 @@ export default function SchoolSidebar() {
 
       </nav>
 
-      <div className="pb-8 pr-4">
+      {/* --- RODAPÉ (Minha Conta + Sair) --- */}
+      {/* Adicionei 'space-y-2' para dar um espacinho entre os botões */}
+      <div className="pb-8 pr-4 space-y-2">
+        
+        {/* Movi o 'Minha Conta' para cá, para ficar fixo em baixo */}
+        <SidebarLink 
+          to="/escola/perfil" 
+          icon={<RiUserLine size={24} />}
+          textColor="text-blue-900"
+          activeBg="bg-green-500"
+        >
+          Minha Conta
+        </SidebarLink>
+
         <SidebarLink 
           to="/login" 
           icon={<RiLogoutBoxLine size={24} />}

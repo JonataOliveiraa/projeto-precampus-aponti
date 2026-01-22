@@ -21,9 +21,11 @@ import SchoolsAdmin from './modules/admin/pages/Schools.tsx';
 import PerformanceEvents from './modules/university/pages/PerformanceEvents.tsx';
 import EventDetails from './modules/student/pages/EventDetails.tsx';
 import ProfileUniversity from './modules/university/pages/ProfileUniversity.tsx';
+import SchoolEventDetails from './modules/school/pages/SchoolEventDetails.tsx';
+import SchoolProfile from './modules/school/pages/SchoolProfile.tsx';
 
 
-const rounter = createBrowserRouter([
+const router = createBrowserRouter([
   {
     path: '/',
     element: <Home/>
@@ -39,10 +41,6 @@ const rounter = createBrowserRouter([
   {
     path: '/formulario/estudante',
     element: <StudentForm />
-  },
-  {
-    path: '/formulario/escola',
-    element: <SchoolForm />
   },
   {
     path: '/formulario/escola',
@@ -75,8 +73,15 @@ const rounter = createBrowserRouter([
   {
     path: '/escola/criar-evento',
     element: <AddNewEvent />
-  },  
-  //-
+  }, 
+  {
+    path: '/escola/detalhes',
+    element: <SchoolEventDetails />
+  },
+  {
+    path: '/escola/perfil',
+    element: <SchoolProfile />
+  },
   {
     path: '/precampus/home',
     element: <AdminHome />
@@ -105,11 +110,10 @@ const rounter = createBrowserRouter([
     path: "/universidade/perfil",
     element: <ProfileUniversity />
   }
-  
 ])
  
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-   <RouterProvider router={rounter}></RouterProvider>
+   <RouterProvider router={router}></RouterProvider>
   </StrictMode>,
 )
