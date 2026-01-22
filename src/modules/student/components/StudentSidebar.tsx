@@ -42,6 +42,7 @@ export default function StudentSidebar() {
           activeBg="bg-orange-500"
           textColor="text-orange-500"
         >
+          
           Detalhes dos Eventos
         </SidebarLink>
 
