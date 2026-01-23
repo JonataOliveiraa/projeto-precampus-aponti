@@ -1,5 +1,5 @@
 import HomeLayout from "../../../layout/HomeLayout";
-import UniversitySidebar from "../components/universitySidebar";
+import UniversitySidebar from "../components/UniversitySidebar";
 
 export default function PerformanceEvents() {
   return (
