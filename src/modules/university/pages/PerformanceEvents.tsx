@@ -1,82 +1,124 @@
+import { 
+  RiImageAddLine, 
+  RiSave3Line, 
+  RiCalendarEventLine, 
+  RiMapPinLine, 
+  RiTimeLine,
+  RiPencilLine,
+  RiBuilding2Line
+} from "@remixicon/react";
 import HomeLayout from "../../../layout/HomeLayout";
-import UniversitySidebar from "../components/universitySidebar";
+import UniversitySidebar from "../components/UniversitySidebar";
+
+const EventoImgPlaceholder = "https://images.unsplash.com/photo-1524178232363-1fb2b075b655"; 
 
 export default function PerformanceEvents() {
   return (
     <HomeLayout sidebar={<UniversitySidebar />}>
-      <h1 className="text-2xl font-semibold text-purple-500 mb-6">
-        Atuação nos eventos:
-      </h1>
+      
+      <div className="mb-8 animate-fade-in-down">
+        <h1 className="text-3xl font-bold text-purple-600 tracking-tight mb-1">
+          Detalhes da Atuação
+        </h1>
+        <p className="text-gray-500 font-medium">
+          Visualize e gerencie os detalhes da participação da universidade.
+        </p>
+      </div>
 
-      {/* Card do evento */}
-      <div className="bg-white border-2 border-purple-200 rounded-xl p-6 flex gap-6 mb-6">
-        <div className="flex-1">
-          <h2 className="text-blue-700 font-semibold text-lg mb-3">
+      <div className="bg-white rounded-2xl shadow-sm border border-purple-500 p-8 w-full">
+        
+        <div className="flex justify-between items-start mb-6">
+          <h2 className="text-xl text-blue-900 font-bold uppercase tracking-wide">
             NOME DO EVENTO
           </h2>
+          
+          <button className="text-purple-500 hover:text-purple-600 text-sm font-bold transition-colors uppercase flex items-center gap-1 cursor-pointer">
+            <RiPencilLine size={18} />
+            Editar
+          </button>
+        </div>
 
-          <p className="text-sm text-blue-500">
-            <strong>Data:</strong> <span className="text-gray-400">00/00/0000</span>
-          </p>
-          <p className="text-sm text-blue-500">
-            <strong>Horário:</strong> <span className="text-gray-400">00:00</span> 
-          </p>
-          <p className="text-sm text-blue-500">
-            <strong>Local:</strong> <span className="text-gray-400">Nome da rua, número, bairro, cidade.</span> 
-          </p>
+        <div className="flex flex-col lg:flex-row gap-10">
+          
+          <div className="flex-1 space-y-6">
+            
+            <div className="space-y-4">
+              <div className="flex items-center gap-4 text-gray-600">
+                <div className="p-3 bg-purple-50 text-purple-600 rounded-xl">
+                  <RiCalendarEventLine size={24} />
+                </div>
+                <div>
+                  <span className="block text-xs font-bold text-blue-900 uppercase">Data</span> 
+                  <span className="text-gray-800 font-medium">00/00/0000</span>
+                </div>
+              </div>
+              
+              <div className="flex items-center gap-4 text-gray-600">
+                <div className="p-3 bg-purple-50 text-purple-600 rounded-xl">
+                   <RiTimeLine size={24} />
+                </div>
+                <div>
+                  <span className="block text-xs font-bold text-blue-900 uppercase">Horário</span> 
+                  <span className="text-gray-800 font-medium">00:00 - 00:00</span>
+                </div>
+              </div>
 
-          <div className="mt-3">
-            <label className="block text-sm font-medium text-blue-600 mb-1">
-              Descrição:
-            </label>
+              <div className="flex items-center gap-4 text-gray-600">
+                <div className="p-3 bg-purple-50 text-purple-600 rounded-xl">
+                   <RiMapPinLine size={24} />
+                </div>
+                <div>
+                  <span className="block text-xs font-bold text-blue-900 uppercase">Local</span> 
+                  <span className="text-gray-800 font-medium">Nome da rua, número, bairro, cidade.</span>
+                </div>
+              </div>
+            </div>
 
-            <textarea
-              className="w-2/3 min-h-[110px] border border-gray-300 rounded-lg p-3 text-sm text-gray-700
-               resize-none focus:outline-none focus:ring-2 focus:ring-purple-300"
-              placeholder="Texto explicativo sobre o evento, objetivos, público-alvo e outras informações relevantes."
-            />
+            <div className="pt-2">
+              <label className="text-blue-900 font-bold text-sm uppercase block mb-2 ml-1">
+                Descrição da Participação
+              </label>
+              <div className="w-full bg-white border-2 border-gray-100 rounded-xl p-4 text-gray-600 text-sm leading-relaxed text-justify">
+                DESCRIÇÃO DE COMO SERÁ A PARTICIPAÇÃO DA UNIVERSIDADE NO EVENTO E OS CURSOS QUE FARÃO PARTE. 
+                Texto explicativo sobre o evento, objetivos, público-alvo e outras informações relevantes preenchidas anteriormente.
+              </div>
+            </div>
+
+            <div>
+               <label className="text-blue-900 font-bold text-xs uppercase block mb-2 ml-1">
+                 Logomarca da Universidade
+               </label>
+               <label className="cursor-pointer border-2 border-dashed border-purple-300 text-xs font-bold text-purple-600 px-4 py-3 rounded-xl bg-purple-50 hover:bg-purple-100 transition-colors inline-flex items-center gap-2 w-full justify-center">
+                  <RiImageAddLine size={18} />
+                  ALTERAR ARQUIVO DE IMAGEM
+                  <input type="file" className="hidden" />
+               </label>
+            </div>
+          </div>
+
+          <div className="flex-1">
+            <div className="w-full h-96 bg-gray-100 rounded-2xl overflow-hidden border-2 border-gray-100 relative group shadow-inner">
+              <img 
+                src={EventoImgPlaceholder} 
+                alt="Preview do Evento" 
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <span className="text-white text-sm font-medium flex items-center gap-2">
+                  <RiBuilding2Line size={16} /> Imagem do Evento
+                </span>
+              </div>
+            </div>
           </div>
         </div>
 
-        <img
-          src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655"
-          alt="Evento"
-          className="w-100 h-full object-cover rounded-lg"
-        />
-      </div>
-
-      {/* Formulário */}
-      <div className="bg-white border-2 border-purple-200 rounded-xl p-6">
-        <div className="mb-4">
-          <label className="block text-sm font-medium text-purple-700 mb-2">
-            Logomarca da Universidade:
-          </label>
-          <input
-            type="file"
-            className="block w-full text-sm text-gray-500
-              file:mr-4 file:py-2 file:px-4
-              file:rounded-lg file:border-0
-              file:text-sm file:font-medium
-              file:bg-purple-100 file:text-purple-700
-              hover:file:bg-purple-200"
-          />
+        <div className="flex justify-end mt-8 pt-6 border-t border-gray-100">
+          <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full shadow-md hover:shadow-lg transition-all active:scale-95 flex items-center gap-2 cursor-pointer">
+            Salvar Alterações
+            <RiSave3Line size={20} />
+          </button>
         </div>
 
-        <div className="mb-6">
-          <label className="block text-sm font-medium text-purple-700 mb-2">
-            Descrição do evento:
-          </label>
-          <textarea
-            className="w-full min-h-[120px] border rounded-lg p-3 text-sm focus:outline-none focus:ring-2 focus:ring-purple-300"
-            placeholder="DESCRIÇÃO DE COMO SERÁ A PARTICIPAÇÃO DA UNIVERSIDADE NO EVENTO E OS CURSOS QUE FARÃO PARTE."
-          />
-        </div>
-
-        <div className="flex justify-center">
-            <button className="bg-green-500 hover:bg-green-600 text-white font-medium px-8 py-2 rounded-lg ">
-                ENVIAR
-            </button>
-        </div>
       </div>
     </HomeLayout>
   );

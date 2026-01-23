@@ -1,7 +1,6 @@
 import { 
   RiHomeLine, 
   RiCalendarEventLine, 
-  RiFileListLine, 
   RiUserLine, 
   RiLogoutBoxLine 
 } from "@remixicon/react";
@@ -34,15 +33,6 @@ export default function StudentSidebar() {
           textColor="text-orange-500"
         >
           Meus Eventos
-        </SidebarLink>
-
-        <SidebarLink 
-          to="/estudante/detalhe-dos-eventos" 
-          icon={<RiFileListLine size={24} />}
-          activeBg="bg-orange-500"
-          textColor="text-orange-500"
-        >
-          Detalhes dos Eventos
         </SidebarLink>
 
         

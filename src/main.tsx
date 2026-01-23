@@ -19,10 +19,10 @@ import ReqStudentsLogin from './modules/admin/pages/ReqStudentsLogin.tsx';
 import ReqUniversitiesLogin from './modules/admin/pages/ReqUniversitiesLogin.tsx';
 import SchoolsAdmin from './modules/admin/pages/Schools.tsx';
 import PerformanceEvents from './modules/university/pages/PerformanceEvents.tsx';
-import EventDetails from './modules/student/pages/EventDetails.tsx';
 import ProfileUniversity from './modules/university/pages/ProfileUniversity.tsx';
 import SchoolEventDetails from './modules/school/pages/SchoolEventDetails.tsx';
 import SchoolProfile from './modules/school/pages/SchoolProfile.tsx';
+import UniversityHome from './modules/university/UniversityHome.tsx';
 
 
 const router = createBrowserRouter([
@@ -99,12 +99,12 @@ const router = createBrowserRouter([
     element: <SchoolsAdmin />
   },
   {
-    path: "/universidade/atuacao-eventos",
-    element: <PerformanceEvents />
+    path: "/universidade/home",
+    element: <UniversityHome />
   },
   {
-    path: "/estudante/detalhe-dos-eventos",
-    element: <EventDetails />
+    path: "/universidade/atuacao-eventos",
+    element: <PerformanceEvents />
   },
   {
     path: "/universidade/perfil",
