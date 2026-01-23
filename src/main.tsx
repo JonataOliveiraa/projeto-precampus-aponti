@@ -23,6 +23,8 @@ import EventDetails from './modules/student/pages/EventDetails.tsx';
 import ProfileUniversity from './modules/university/pages/ProfileUniversity.tsx';
 import SchoolEventDetails from './modules/school/pages/SchoolEventDetails.tsx';
 import SchoolProfile from './modules/school/pages/SchoolProfile.tsx';
+import EventParticipationUni from './modules/university/pages/EventParticipationUni.tsx';
+
 
 
 const router = createBrowserRouter([
@@ -102,6 +104,11 @@ const router = createBrowserRouter([
     path: "/universidade/atuacao-eventos",
     element: <PerformanceEvents />
   },
+  {
+  path: "/universidade/atuacao-nos-eventos",
+  element: <EventParticipationUni />
+},
+
   {
     path: "/estudante/detalhe-dos-eventos",
     element: <EventDetails />
