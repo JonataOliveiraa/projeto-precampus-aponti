@@ -17,12 +17,13 @@ import AdminHome from './modules/admin/AdminHome.tsx';
 import AddNewEvent from './modules/school/pages/AddNewEvent.tsx';
 import ReqStudentsLogin from './modules/admin/pages/ReqStudentsLogin.tsx';
 import ReqUniversitiesLogin from './modules/admin/pages/ReqUniversitiesLogin.tsx';
-import SchoolsAdmin from './modules/admin/pages/Schools.tsx';
+import SchoolsAdmin from './modules/admin/pages/SchoolsAdmin.tsx';
 import PerformanceEvents from './modules/university/pages/PerformanceEvents.tsx';
 import ProfileUniversity from './modules/university/pages/ProfileUniversity.tsx';
 import SchoolEventDetails from './modules/school/pages/SchoolEventDetails.tsx';
 import SchoolProfile from './modules/school/pages/SchoolProfile.tsx';
 import UniversityHome from './modules/university/UniversityHome.tsx';
+import ReqEvents from './modules/admin/pages/ReqEvents.tsx';
 
 
 const router = createBrowserRouter([
@@ -93,6 +94,10 @@ const router = createBrowserRouter([
   {
     path: "/precampus/validar-universidades",
     element: <ReqUniversitiesLogin />
+  },
+  {
+    path: "/precampus/validar-eventos",
+    element: <ReqEvents />
   },
   {
     path: "/precampus/escolas",
